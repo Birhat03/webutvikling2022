@@ -64,7 +64,7 @@ aside{
 
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 
