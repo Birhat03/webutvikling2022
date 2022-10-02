@@ -15,7 +15,8 @@ body{
                             "aside aside aside"
                             "footer footer footer";
     grid-gap: 10px;
-    /* fikse footer sånn at det ligger  og fyller ut helt nederst på sida */
+    /* fikse footer sånn at det ligger  og fyller ut helt nederst på sida 
+    kode hentet fra: https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 */
     min-height: 100vh;
 }
 
@@ -34,6 +35,7 @@ nav{
     justify-content: space-between;
     padding: 1rem;
     border-bottom-style: solid;
+    /* bilde hentet fra: bildebank */
     background-image: url('../img/header.jpg');
 }
 
@@ -68,7 +70,8 @@ aside{
     justify-content: space-around;
 }
 
-/* gjør bildene responsivt*/
+/* gjør bildene responsivt
+kode hentet fra: https://www.w3schools.com/howto/howto_css_image_responsive.asp */
 img{
     max-width: 100%;
     height: auto;
