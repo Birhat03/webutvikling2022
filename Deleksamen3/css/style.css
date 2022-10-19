@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    /* bakgrunnsbilde hentet fra: https://freefrontend.com/css-background-patterns/ */
+    background-image: url("../img/background.png");
+}
+/* mesteparten av grid og flexbox brukt her er inspirert/hentet fra grid og flexbox videon i webtricks lms */
+#grid-container{
+    display: grid;
+    grid-template-areas:    "header header header"
+                            "main main main"
+                            "aside aside aside"
+                            "footer footer footer";
+    grid-gap: 10px;
+    /* fikse footer sånn at det ligger  og fyller ut helt nederst på sida 
+    kode hentet fra: https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 */
+    min-height: 100vh;
+}
+
+header{
+    grid-area: header;
+    
+}
+
+#logo{
+    width: 30%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom-style: solid;
+    /* bilde hentet fra: bildebank */
+    background-image: url('../img/header.jpg');
+}
+
+nav ul{
+    padding: 20px;
+    background-color: black;
+}
+
+nav ul li {
+    display: inline-block;  
+    padding: 5px;
+    font-size: 24px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    grid-area: main;
+   
+}
+/* Kilde: https://stackoverflow.com/questions/56375122/create-responsive-table-using-flexbox */
+.cms-container {
+    display: grid; /* Gjør tabellen om til et eget grid */
+    grid-template-columns: repeat(4, 1fr); /* lager/repeterer 4 kolonner i gridden som har størrelse verdi på 1 fraction unit  */
+    grid-template-rows: repeat(4, 1fr); /* det samme skjer her med radene*/
+    grid-auto-flow: column; /* starter/teller hvert grid boks i retningen mot kolonne */
+    border: 1px solid black;
+    background-color: white;
+    margin: auto; /* legger div i midten */
+
+  }
+
+.uuseo-container{
+    display: grid; /* Gjør tabellen om til et eget grid */
+    grid-template-columns: repeat(3, 1fr); /* lager/repeterer 3 kolonner i gridden som har størrelse verdi på 1 fraction unit  */
+    grid-template-rows: repeat(3, 1fr); /* det samme skjer her med radene*/
+    grid-auto-flow: column; /* starter/teller hvert grid boks i retningen mot kolonne */
+    border: 1px solid black;
+    background-color: white;
+    margin: auto; /* legger div i midten */
+    width: 80%;
+  }
+  
+.kolonne {
+    display: contents;
+    border: 1px solid black;
+  }
+  
+.celle {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+.table-header{
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+aside{
+    grid-area: aside;
+}
+
+.flex-container{
+    display: flex;
+   /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+/* gjør bildene responsivt
+kode hentet fra: https://www.w3schools.com/howto/howto_css_image_responsive.asp */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+article{
+    width: 25%;
+    background-color: grey;
+    padding: 20px;
+    border-style: solid;
+}
+
+
+.main-article{
+    width: 90%;
+    background-color: burlywood;
+}
+
+.main-article{
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    background-color: white;
+    border-top-style: solid;
+    padding: 1rem;
+}
+
+h5{
+    display: none;
+}
+
+
+/* hentet fra: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+@media only screen and (max-width: 768px){
+body{
+    font-size: larger;
+}
+
+.cms-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+h5{
+    display: block;
+}
+
+.cms-container{
+    grid-auto-flow: row;
+}
+
+.table-header{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+}
+
+
