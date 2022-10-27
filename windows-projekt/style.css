@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#windows-desktop{
+    background-image:url("img/wallpaper.jpeg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+#windows-icon {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7010154403558299), rgba(0,212,255,1) 100%);
+    border-radius: 100%;
+    padding:1rem;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+
+}
+
+#icon-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#icon-container .icon{
+    margin: 1rem;
+}
+
+.icon{
+    width: 40px;
+}
+
+#drop-up{
+   
+}
+
+
+
+#windows-up-window{
+    height: 500px;
+    width: 600px;
+    background-color: #043e9f;
+    display: none;
+    position: absolute;
+    bottom: 65px;
+}
+
+#inside-window{
+    height: 485px;
+    width: 400px;
+    background-color: #fff;
+    margin:1rem;
+}
+
+#drop-up:hover #windows-up-window{
+    display: block;
+}
+
+footer{
+    height: 65px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #043e9f99;
+}
