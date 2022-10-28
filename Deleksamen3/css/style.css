@@ -67,7 +67,6 @@ main{
     border: 1px solid black;
     background-color: white;
     margin: auto; /* legger div i midten */
-
   }
 
 .uuseo-container{
@@ -77,8 +76,7 @@ main{
     grid-auto-flow: column; /* starter/teller hvert grid boks i retningen mot kolonne (column) */
     border: 1px solid black;
     background-color: white;
-    margin: auto; /* legger div i midten */
-    
+    margin: auto; /* legger div i midten */    
   }
   
 .kolonne {
@@ -117,6 +115,7 @@ img{
     height: auto;
 }
 
+
 article{
     width: 25%;
     background-color: rgb(189, 184, 184);
@@ -126,16 +125,21 @@ article{
 
 .main-article{
     margin: auto;
-    width: 90%;
+    width: 97%;
     background-color: burlywood;
     text-align: center;
 }
 
 .main-article p{
    text-align: left;
+   width: 60%;
    margin-left: 4rem;
     padding: 0.5rem;
-    width: 60%;
+    
+}
+
+.main-article ol{   
+    padding: 15px;
 }
 
 .main-article h3{
@@ -143,8 +147,8 @@ article{
     margin-left: 4rem;
 }
 .main-article h4{
+    margin-left: 2rem;
     text-align: left;
-    margin-left: 4rem;
 }
 
 .main-article ul{
@@ -167,6 +171,7 @@ footer{
 h5{
     display: none;
 }
+
 /* hentet fra: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
 @media only screen and (max-width: 782px){
 
@@ -175,7 +180,7 @@ body{
 }
 
 .cms-container{
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     background-color: red;
     grid-auto-flow: row;
@@ -196,8 +201,15 @@ h5{
     display: none;
 }
 
+article{
+    width: 100%;
+}
+
 .main-article p{
     width: 80%;
+}
+.main-article ol{
+    font-size: large;
 }
 
 nav{
@@ -210,7 +222,6 @@ footer{
 .celle{
     width: 100%;
 }
-
 }
 
 
