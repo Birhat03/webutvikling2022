@@ -128,10 +128,33 @@ article{
     margin: auto;
     width: 90%;
     background-color: burlywood;
+    text-align: center;
 }
 
-.main-article{
-    text-align: center;
+.main-article p{
+   text-align: left;
+   margin-left: 4rem;
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.main-article h3{
+    text-align: left;
+    margin-left: 4rem;
+}
+.main-article h4{
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.main-article ul{
+    text-align: left;
+    margin-left: 4rem;
+}
+
+#synlighet{
+    text-align: left;
+    margin-left: 4rem;
 }
 
 footer{
@@ -145,7 +168,7 @@ h5{
     display: none;
 }
 /* hentet fra: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 782px){
 
 body{
     font-size: larger;
@@ -173,8 +196,8 @@ h5{
     display: none;
 }
 
-article{
-    width: 100%;
+.main-article p{
+    width: 80%;
 }
 
 nav{
