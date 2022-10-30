@@ -59,7 +59,7 @@ main{
    
 }
 /* Kilde: https://stackoverflow.com/questions/56375122/create-responsive-table-using-flexbox */
-.cms-container {
+.cms-tabell {
     display: grid; /* Gjør tabellen om til et eget grid */
     grid-template-columns: repeat(4, 1fr); /* lager/repeterer 4 kolonner i gridden som har størrelse verdi på 1 fraction unit  */
     grid-template-rows: repeat(4, 1fr); /* det samme skjer her med radene*/
@@ -69,7 +69,7 @@ main{
     margin: auto; /* legger div i midten */
   }
 
-.uuseo-container{
+.uuseo-tabell{
     display: grid; /* Gjør tabellen om til et eget grid */
     grid-template-columns: repeat(3, 1fr); /* lager/repeterer 3 kolonner i gridden som har størrelse verdi på 1 fraction unit  */
     grid-template-rows: repeat(3, 1fr); /* det samme skjer her med radene*/
@@ -90,7 +90,10 @@ main{
     padding: 5px;
   }
 
-
+  .celle p {
+    font-size: 16px;
+    text-align: left;
+  }
 
 .table-header{
     border: 1px solid black;
@@ -114,7 +117,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
 
 article{
     width: 25%;
@@ -152,8 +154,16 @@ article{
 }
 
 .main-article ul{
-    text-align: left;
-    margin-left: 4rem;
+  text-align: left;
+  font-size: 16px;
+}
+
+#synlighet-liste{
+    margin-left:4rem ;
+}
+
+.tabell-liste{
+    margin-left: 0rem;
 }
 
 #synlighet{
@@ -179,23 +189,20 @@ body{
     font-size: larger;
 }
 
-.cms-container{
+.cms-tabell{
     display: flex;  
     flex-wrap: wrap;
-    background-color: red;
     grid-auto-flow: row;
 }
 
-.uuseo-container{
+.uuseo-tabell{
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
 }
 
 h5{
     display: block;
 }
-
 
 .table-header{
     display: none;
@@ -208,6 +215,7 @@ article{
 .main-article p{
     width: 80%;
 }
+
 .main-article ol{
     font-size: large;
 }
@@ -219,6 +227,7 @@ nav{
 footer{
     width: 100%;
 }
+
 .celle{
     width: 100%;
 }
