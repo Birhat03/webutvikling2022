@@ -182,7 +182,40 @@ h5{
     display: none;
 }
 
+.kontakt-article{
+    width: 40%;
+}
+
+input{
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 70%;
+    height: 100px;
+}
+
+/*Gjøre iframe responsivt kode hentet fra: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+.iframe-container{
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 /* hentet fra: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+/* Mobil: */
 @media only screen and (max-width: 782px){
 
 body{
@@ -230,6 +263,27 @@ footer{
 
 .celle{
     width: 100%;
+}
+
+.kontakt-article{
+    width: 100%;
+    flex-direction: row;
+}
+
+textarea{
+    width: 90%;
+}
+
+input{
+    width: 50%;
+}
+}
+
+/* Nettbrett: */
+@media only screen and (min-width: 782px) and (max-width: 1024px){
+
+body{
+    font-size: larger;
 }
 }
 
