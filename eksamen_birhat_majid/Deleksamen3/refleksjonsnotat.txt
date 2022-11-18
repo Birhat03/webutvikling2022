@@ -1,0 +1,3 @@
+- articleboksene blir ganske tynne og smale med små tekst, 
+når det blir responsivt på mobil (eller så er det bare fordi at mobilskjermene er smale) edit: har fiksa det nå og nå ligger de tett inntil hverandre med god størrelse
+- men ellers så syns jeg det gikk greit å holde meg til wireframesa

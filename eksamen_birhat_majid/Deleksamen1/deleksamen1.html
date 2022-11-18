@@ -1,0 +1,62 @@
+<!-- Fikk totalt 17 errors og 5 warnings ved validering -->
+<!DOCTYPE html>
+<!-- 1. Skrev inn !doctype foran html siden det var excpected-->
+<html lang="en">
+<!-- 2. Skrev inn lang="en" foran html for å deklarere det språket til engelsk (warning)-->
+<head>
+    <!-- 3. flyttet hele head elementet over body istedet siden det ikke kan være i body-->
+    <meta charset="UTF-8">
+    <!-- 4. Skrev inn koden meta charset utf-8 siden karakter tegnsettet var ikke definert -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 5. styles.css ble referert uten anførselstegn foran (3 andre feil forsvant)-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Web eksamen del 1</title>
+</head>
+
+<body>
+        
+        <nav>
+            <h2>Logo</h2>
+            <!-- 6.Skiftet fra h1 til h2 siden det ble anbefalt å bruke h1 bare til top-level headings (warning)-->
+             <ul>
+                <!-- 7. Fikk inn ul elementet siden li kan ikke være child element til nav-->
+                <li> <a href="#">Boatswain schooner</a></li>
+                <li> <a href="#">Account lookout</a></li>
+                <li> <a href="#">Sail ho shrouds</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Yar Pirate Ipsum</h1>
+            <!-- 8. Skiftet fra h1 til h2 siden det ble anbefalt å bruke h1 bare til top-level headings (warning)-->
+            <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
+            <a class="button">Les mer</a>
+        </header>
+        <main>
+            <!-- 9. Endret div id="main" til bare et main element-->
+            <article>
+                <h2>Prow scuttle</h2>
+                <!-- 10.Skiftet fra h1 til h2 siden det ble anbefalt å bruke h1 bare til top-level headings (warning)-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <!-- 11. article elementet var ikke avsluttet så jeg skrev inn </article>-->
+            <article>
+                <h2>Jack Tar transom</h2>
+                <!-- 12.Skiftet fra h1 til h2 siden det ble anbefalt å bruke h1 bare til top-level headings (warning)-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <article>
+                <h2>Trysail Sail</h2>
+                <!-- 13.Skiftet fra h1 til h2 siden det ble anbefalt å bruke h1 bare til top-level headings (warning)-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+        </main>
+        <footer>
+            <span>Twitter</span>
+            <span>Facebook</span>
+            <span>Instagram</span>
+        </footer>
+    </body>
+</html>
