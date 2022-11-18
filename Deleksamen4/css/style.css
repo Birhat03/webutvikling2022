@@ -78,6 +78,17 @@ main{
     background-color: white;
     margin: auto; /* legger div i midten */    
   }
+
+  .analyse-tabell{
+    display: grid; /* Gjør tabellen om til et eget grid */
+    grid-template-columns: repeat(2, 1fr); /* lager/repeterer 2 kolonner i gridden som har størrelse verdi på 1 fraction unit (Utseendesvis så ser det ut som det er 2 rader og 5 kolonner men gjorde det for å holde table headers på plass) */
+    grid-template-rows: repeat(5, 1fr); /* lager/repeterer 5 rader i gridden som har størrelse verdi på 1 fraction unit  */
+    grid-auto-flow: column; /* starter/teller hvert grid boks i retningen mot kolonne (column) */
+    border: 1px solid black;
+    background-color: white;
+    margin: auto; /* legger div i midten */ 
+    
+  }
   
 .kolonne {
     display: contents;
@@ -95,10 +106,58 @@ main{
     text-align: left;
   }
 
+  .kilder li{
+    padding-top: 10px;
+  }
+
+  .wcag{
+    margin-bottom: 3rem;
+    
+  }
+
+  .wcag li{
+    padding-top: 10px;
+    margin-left: 1rem;
+    
+  }
+
 .table-header{
     border: 1px solid black;
     padding: 5px;
     font-weight: bold;
+  }
+
+  /* Style all font awesome icons */
+  /* hentet fra: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float: right;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
   }
 
 aside{
@@ -158,6 +217,11 @@ article{
   font-size: 16px;
 }
 
+h5{
+    text-align: left;
+    margin-left: 1rem;
+}
+
 #synlighet-liste{
     margin-left:4rem ;
 }
@@ -178,7 +242,7 @@ footer{
     padding: 1rem;
 }
 
-h5{
+.mobile-header{
     display: none;
 }
 
@@ -196,6 +260,8 @@ textarea{
     height: 100px;
 }
 
+
+
 /*Gjøre iframe responsivt kode hentet fra: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
 .iframe-container{
     position: relative;
@@ -212,6 +278,10 @@ iframe {
     right: 0;
     width: 100%;
     height: 100%;
+  }
+
+  aside p{
+    font-size: medium;
   }
 
 /* hentet fra: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
@@ -233,7 +303,12 @@ body{
     flex-wrap: wrap;
 }
 
-h5{
+.analyse-tabell{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile-header{
     display: block;
 }
 
@@ -267,7 +342,6 @@ footer{
 
 .kontakt-article{
     width: 100%;
-    flex-direction: row;
 }
 
 textarea{
@@ -277,6 +351,22 @@ textarea{
 input{
     width: 50%;
 }
+
+aside p {
+    font-size: 15px;
+}
+}
+
+@media only screen  and (max-width: 680px){
+    aside p {
+       display: none;
+
+    }
+
+    #logo{
+        width: 50%;
+    }
+  
 }
 
 /* Nettbrett: */
@@ -285,6 +375,7 @@ input{
 body{
     font-size: larger;
 }
+
 }
 
 
